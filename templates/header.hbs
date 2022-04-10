@@ -1,0 +1,31 @@
+<header>
+
+    <img id="logo" src="./assets/images/logo.png" alt="logo">
+
+    <nav id="nav">
+        <ul id="navUl">
+            <li class="navLi"><a class="navA" rel="noopener noreferrer" href="#allRecepies">Всички рецепти</a>
+            </li>
+            {{#if loggedIn}}
+            <li class="navLi"><a class="navA" rel="noopener noreferrer" href="#favRecepies">Любими рецепти</a>
+            </li>
+            <li class="navLi"><a class="navA" rel="noopener noreferrer" href="#createRecepie">Създай рецепта</a>
+            </li>
+            <li class="navLi"><a class="navA" rel="noopener noreferrer" href="#myProfile">Моят Профил</a></li>
+            {{/if}}
+        </ul>
+    </nav>
+
+    <div id="logoutLoginRegister">
+        {{#if loggedIn}}
+        <span>Hi, {{user.username}}.</span>
+        <a href="#logout">Logout</a>
+        {{else}}
+        <a href="#login">Login</a>
+        <a href="#register">Register</a>
+        {{/if}}
+        <img id="profilePic" src="./assets/images/guest.png" alt="profilePic">
+    </div>
+
+
+</header>

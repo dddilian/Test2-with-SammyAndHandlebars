@@ -1,0 +1,45 @@
+<div class="recepie" id="{{id}}">
+
+    <a class="recLink" href="{{href}}">
+        <img class="recImg" src="{{thumbnail}}" alt="">
+    </a>
+
+    <h2 class="recTitle">{{title}}</h2>
+
+    <p class="recIngredients">{{ingredients}}</p>
+
+
+
+    {{!-- <div class="recButtonsDiv">
+        {{#if isLiked}}
+        <a id="remove-{{id}}" class="recBtn addFavBtn" onclick="removeFromFav(event)" data-id="{{id}}">Премахни от
+            любими</a>
+        {{else}}
+        <a id="add-{{id}}" class="recBtn addFavBtn" onclick="addToFav(event)" data-id="{{id}}">Добави в любими</a>
+        {{/if}}
+
+        <a class="recBtn cookBtn" href="#cookRecepie/{{id}}">Сготви</a>
+    </div> --}}
+
+
+    <div class="recButtonsDiv">
+        {{!--
+        <a id="{{id}}" class="recBtn addFavBtn" onclick="addOrRemove(event)" data-id="{{id}}">
+            {{#if isLiked}}Премахни от любими любими{{else}}Добави в любими{{/if}}</a> --}}
+
+
+
+
+        {{#if isLiked}}
+        <button id="{{id}}" class="recBtn addFavBtn" onclick="addOrRemove(event)" data-id="{{id}}">
+            Премахни от любими</button>
+        {{else}}
+        <button id="{{id}}" class="recBtn addFavBtn" onclick="addOrRemove(event)" data-id="{{id}}">
+            Добави в любими</button>
+        {{/if}}
+
+        <a class="recBtn cookBtn" href="#cookRecepie/{{id}}">Сготви</a>
+    </div>
+
+
+</div>

@@ -1,0 +1,27 @@
+{{>header}}
+
+<div id="searchDiv">
+    <label for="selectEl">Filter by ingredient</label>
+    <select name="" id="selectEl">
+        {{#each ingredients}}
+        {{>ingredient}}
+        {{/each}}
+    </select>
+
+    <label for="searchNameInput">Search by name</label>
+    <input type="text" id="searchNameInput">
+</div>
+
+<div id="allRecepies">
+
+    {{#each recepies}}
+
+    {{>recepie}}
+
+    {{else}}
+    <div>No recepies</div>
+    {{/each}}
+
+</div>
+
+{{>footer}}

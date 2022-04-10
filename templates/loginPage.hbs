@@ -1,0 +1,22 @@
+{{>header}}
+
+<div id="login">
+    <form class="loginRegform " action="#login" method="POST">
+
+        <label for="loginUsername">Username:</label>
+        <input id="loginUsername" type="text" placeholder="username" name="loginUsername" value="">
+
+        <label for="loginPassword">Password:</label>
+        <input id="loginPassword" type="password" placeholder="password" name="loginPassword" value="">
+
+        <p id="logError" class="error">Wrong credentials</p>
+
+        <input id="loginBtn" type="submit" value="Login">
+        <a class="goTo" href="#register">You don't have an account. Go to register page.</a>
+
+
+    </form>
+
+</div>
+
+{{>footer}}
