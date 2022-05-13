@@ -1,3 +1,3 @@
 # Test2-with-SammyAndHandlebars
-Тест 2 с използване на Sammy router и Handlebars
+Тест 2 с използване на външни библиотеки - Sammy router и Handlebars
 - не е довършен
